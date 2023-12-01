@@ -65,13 +65,48 @@ export const Tasks = () => {
                 </div>
             </div>
             <div className="checkbox-container">
-                <ChecksTasks title='Despertar temprano' defChecked={checkedFields.getUpEarly} onChange={() => onCheckChange('getUpEarly')}/>
-                <ChecksTasks title='Hacer la cama' defChecked={checkedFields.bed} onChange={() => onCheckChange('bed')}/>
-                <ChecksTasks title='Meditar' defChecked={checkedFields.meditate} onChange={() => onCheckChange('meditate')}/>
-                <ChecksTasks title='Leer' defChecked={checkedFields.read} onChange={() => onCheckChange('read')}/>
-                <ChecksTasks title='Ejercicio' defChecked={checkedFields.workout} onChange={() => onCheckChange('workout')}/>
-                <ChecksTasks title='Persona' defChecked={checkedFields.study} onChange={() => onCheckChange('study')}/>
-                <ChecksTasks title='Dieta' defChecked={checkedFields.diet} onChange={() => onCheckChange('diet')}/>
+                <ChecksTasks 
+                  title='Despertar temprano' 
+                  defChecked={checkedFields.getUpEarly} 
+                  onChange={() => onCheckChange('getUpEarly')}
+                  rules='Despertar antes de las 8:00 am, a menos de que sea fin de semana o haya casos especiales'
+                />
+                <ChecksTasks 
+                  title='Hacer la cama' 
+                  defChecked={checkedFields.bed} 
+                  onChange={() => onCheckChange('bed')}
+                  rules='Hacer la cama antes de salir de la habitación'
+                />
+                <ChecksTasks 
+                  title='Meditar' 
+                  defChecked={checkedFields.meditate} 
+                  onChange={() => onCheckChange('meditate')}
+                  rules='Meditar al menos 10 minutos'
+                />
+                <ChecksTasks 
+                  title='Leer' 
+                  defChecked={checkedFields.read} 
+                  onChange={() => onCheckChange('read')}
+                  rules='Leer al menos 25 minutos'
+                />
+                <ChecksTasks 
+                  title='Ejercicio' 
+                  defChecked={checkedFields.workout} 
+                  onChange={() => onCheckChange('workout')}
+                  rules='Hacer ejercicio al menos 20 minutos, de cualquier tipo'
+                />
+                <ChecksTasks 
+                  title='Persona' 
+                  defChecked={checkedFields.study} 
+                  onChange={() => onCheckChange('study')}
+                  rules='Trabajar o estudiar, los días que no haya trabajo o estudio pendiente se puede marcar como hecho'
+                />
+                <ChecksTasks 
+                  title='Dieta' 
+                  defChecked={checkedFields.diet} 
+                  onChange={() => onCheckChange('diet')}
+                  rules='Comer saludable, evitar comida chatarra y dulces. No se puede marcar como hecho si se comió algo no saludable'
+                />
                 <textarea placeholder='¿En qué pensaste hoy?' value={checkedFields.feeling} onChange={() => onCheckChange('feeling')}/>
                 <SaveButton onClick={onSaveClick} isSaving={isSaving} isSaveButton/>
             </div>
