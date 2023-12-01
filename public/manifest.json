@@ -1,0 +1,23 @@
+{
+    "background_color": "#141414",
+    "categories": ["lifestyle", "music"],
+    "description": "Esta es una PWA de React",
+    "dir": "ltr",
+    "display_override": ["standalone", "fullscreen"],
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "./medium.png",
+            "sizes": "230x230",
+            "type": "image/png"
+        }
+    ],
+    "lang": "es-MX",
+    "name": "MyProgress App",
+    "orientation": "portrait",
+    "prefer_related_application": false,
+    "scope": "/",
+    "short_name": "MyProgress",
+    "start_url": "/",
+    "theme_color": "#141414"
+  }

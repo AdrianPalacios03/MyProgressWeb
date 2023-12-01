@@ -1,0 +1,27 @@
+.edit-pomodoro-times {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.edit-pomodoro-times div {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-pomodoro-times div p {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.edit-pomodoro-times input {
+    color: aliceblue;
+    font-size: 20px;
+    width: 25%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,35 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    outline: 1px solid #3f76ec;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 20px 20px 0px rgb(0, 0, 0);
+}
+
+.login-page input {
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #3f76ec;
+    outline: none;
+    font-size: 20px;
+}
+
+.login-page button {
+    background-color: #3f76ec;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
