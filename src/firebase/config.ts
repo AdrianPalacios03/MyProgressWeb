@@ -3,10 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore/lite'
 import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+if (import.meta.env.DEV) {
+  self.FIREBASE_APPCHECK_DEBUG_TOKEN = true
+}
+// 6bf585ba-f777-45e9-8295-374dae9f2879
+
 const firebaseConfig = {
   apiKey: "AIzaSyDCxi6eYjlmbvuguBrC5ngsTs627wXjxFg",
   authDomain: "xenochange.firebaseapp.com",

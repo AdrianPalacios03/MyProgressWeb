@@ -1,19 +1,31 @@
-import { CheckBox } from './CheckBox'
+import { CheckBox } from './CheckBox';
+import { Tooltip } from 'react-tooltip';
 
 interface Props {
     title: string,
     defChecked: boolean,
-    onChange: () => void
+    onChange: () => void,
+    rules: string
 }
 
-export const ChecksTasks = ({title, onChange, defChecked}: Props) => {
+export const ChecksTasks = ({title, onChange, defChecked, rules}: Props) => {
+
+    console.log(title.split(" ").join('-') + "-anchor-element")
+
+    let tooltipId = title.split(" ").join('-') + "-anchor-element"
+
     return (
-        <div className='check' style={{display: 'flex', gap: '10px', marginBottom: '10px'}}>
-            <CheckBox 
-                value={defChecked}
-                onChange={onChange}
-            />
-            <label htmlFor="checkbox">{title}</label>
-        </div>
+        <>
+            <Tooltip anchorSelect={"." + tooltipId} place="top">
+                {rules}
+            </Tooltip>
+            <div className='check' style={{display: 'flex', gap: '10px', marginBottom: '10px'}}>
+                <CheckBox
+                    value={defChecked}
+                    onChange={onChange}
+                />
+                <label className={tooltipId}>{title}</label>
+            </div>
+        </>
     )
 }
