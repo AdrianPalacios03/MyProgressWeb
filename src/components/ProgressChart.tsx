@@ -18,6 +18,7 @@ import { IonIcon } from '@ionic/react';
 import { reloadOutline } from 'ionicons/icons';
 import { SaveButton } from './SaveButton';
 import { useNavigate } from 'react-router-dom';
+import { bookOutline  } from 'ionicons/icons'
 
 ChartJS.register(
   CategoryScale,
@@ -142,6 +143,7 @@ export const ProgressChart = () => {
         <Line data={data} options={options} />
         <div className='all-days-button-container'>
           <SaveButton title='Ver todo' onClick={() => {navigate('progress')}} isSaving={false}/>
+          <SaveButton title='Ver notas' onClick={() => {navigate('notes')}} isSaving={false} ic={bookOutline}/>
         </div>
         <MotivationalPhrase/>
     </div>

@@ -43,8 +43,7 @@ export const AllDaysChart = () => {
       let contador = 0;
       let parsedDate = '';
       while (true) {
-        await getDayInfo(askingDate).then((res) => {
-          console.log(res)
+        await getDayInfo(askingDate).then((res: any) => {
           if (!res) {
             needBreak = true;
             return

@@ -10,8 +10,6 @@ interface Props {
 
 export const ChecksTasks = ({title, onChange, defChecked, rules}: Props) => {
 
-    console.log(title.split(" ").join('-') + "-anchor-element")
-
     let tooltipId = title.split(" ").join('-') + "-anchor-element"
 
     return (

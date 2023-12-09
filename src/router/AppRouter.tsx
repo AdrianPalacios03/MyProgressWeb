@@ -6,6 +6,7 @@ import { useAppSelector } from '../hooks/reduxHooks'
 import { useEffect, useState } from 'react'
 import beforeInstallPromptEvent from '../beforeInstallPromptEvent'
 import downloadApp from '../downloadApp';
+import { Notes } from '../pages/notes/Notes'
 
 export const AppRouter = () => {
   const auth = useAppSelector((state) => state.auth.authenticated);
@@ -28,6 +29,7 @@ export const AppRouter = () => {
               <>
                   <Route path="/" element={<HomePage />} />
                   <Route path="/progress" element={<ProgressPage />} />
+                  <Route path="/notes" element={<Notes />} />
 
                   <Route path="/*" element={<Navigate to="/" />} />
               </>
