@@ -10,7 +10,7 @@ export const HomePage = () => {
 
 
   return (
-    <div className='global-margin'>
+    <div>
         <div className="title-date">
           <h1>Bienvenido, Adrián </h1>
           {/* <button className='save-button' onClick={openPomodoro}>

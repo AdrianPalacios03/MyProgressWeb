@@ -6,7 +6,10 @@ import 'react-tooltip/dist/react-tooltip.css';
 function App() {
   return (
     <BrowserRouter>
-      <AppRouter />
+      <div className='bg'></div>
+      <div className="container">
+        <AppRouter />
+      </div>
     </BrowserRouter>
 
   )

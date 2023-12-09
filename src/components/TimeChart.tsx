@@ -83,7 +83,6 @@ export const TimeChart = () => {
     let contador = 0;
     while (true) {
       await getDayInfo(askingDate).then((res) => {
-        console.log(res)
         if (!res) {
           needBreak = true;
           return

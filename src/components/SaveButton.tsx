@@ -5,14 +5,18 @@ interface Props {
   title?: string,
   onClick: () => void,
   isSaving: boolean,
-  isSaveButton?: boolean
+  isSaveButton?: boolean,
+  ic?: string,
 }
 
-export const SaveButton = ({title, onClick, isSaving, isSaveButton}: Props) => {
+export const SaveButton = ({title, onClick, isSaving, isSaveButton, ic}: Props) => {
   return (
-    <button className={'save-button'} onClick={isSaving ? () => {} : onClick} disabled={isSaving}>
+    <button className='save-button' onClick={isSaving ? () => {} : onClick} disabled={isSaving}>
         <div className="check-icon">
           {
+            ic ?
+            <IonIcon icon={ic}/>
+            :
             isSaveButton ?
               isSaving
               ? <IonIcon icon={checkmarkSharp}/>
