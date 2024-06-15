@@ -1,27 +1,69 @@
-# React + TypeScript + Vite
+# MyProgress
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![MyProgress Logo](./public/medium.png)  
 
-Currently, two official plugins are available:
+### ¡Bienvenido a **MyProgress**!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**MyProgress** es la aplicación definitiva para gestionar tus tareas diarias, seguir tus estadísticas y consultar tu progreso de manera efectiva y visualmente atractiva. Ideal para mantenerte organizado y motivado.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Características
 
-- Configure the top-level `parserOptions` property like this:
+- **Gestión de Tareas Diarias**: Crea, edita y organiza tus tareas diarias.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+![Screenshot de la gestión de tareas](./public/readme/mp1.png)  
+- **Estadísticas y Gráficos**: Visualiza tu progreso con gráficos intuitivos
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![Screenshot de la gestión de tareas](./public/readme/mp2.png)  
+
+---
+
+## Instalación
+
+1. **Clona el repositorio**:
+   ```sh
+   git clone https://github.com/AdrianPalacios03/XenoChangeWeb
+   ```
+2. **Instala las dependencias**:
+   ```sh
+   npm install
+   ```
+3. **Inicia la aplicación**:
+   ```sh
+   npm run dev
+   ```
+
+## Uso
+1. **Gestión de Tareas**
+
+2. **Estadísticas y Gráficos**
+
+3. **Historial de Progreso**
+
+---
+
+## Tecnologías
+
+- **Frontend**:
+  - **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+  - **TypeScript**: Superset de JavaScript que añade tipado estático.
+  - **Vite**: Herramienta de construcción de proyectos web.
+  - **Redux**: Librería para el manejo del estado de la aplicación.
+   - **Chart.js**: Librería para la creación de gráficos.
+
+- **Backend**:
+   - **Firebase**: Plataforma de desarrollo de aplicaciones móviles y web.
+
+## Licencia
+Este proyecto está bajo la licencia **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International**. Para más información, visita el siguiente enlace: [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+## Contribución
+
+¡Contribuciones son siempre bienvenidas! Por favor, sigue los siguientes pasos:
+
+1. Haz un **fork** del proyecto.
+2. Crea una nueva **branch** (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza los cambios necesarios y **commitea** tus cambios (`git commit -am 'Añade nueva funcionalidad'`).
+4. **Sube** tus cambios (`git push origin feature/nueva-funcionalidad`).
+5. Abre un **pull request**.
