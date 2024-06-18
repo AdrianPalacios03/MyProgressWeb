@@ -1,4 +1,4 @@
-#MyProgress
+# MyProgress
 
 ![MyProgress Logo](./public/medium.png)
 
