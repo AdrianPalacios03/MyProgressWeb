@@ -1,69 +1,69 @@
 # MyProgress
 
-![MyProgress Logo](./public/medium.png)  
+![MyProgress Logo](./public/medium.png)
 
-### ¡Bienvenido a **MyProgress**!
+### Welcome to **MyProgress**!
 
-**MyProgress** es la aplicación definitiva para gestionar tus tareas diarias, seguir tus estadísticas y consultar tu progreso de manera efectiva y visualmente atractiva. Ideal para mantenerte organizado y motivado.
-
----
-
-## Características
-
-- **Gestión de Tareas Diarias**: Crea, edita y organiza tus tareas diarias.
-
-![Screenshot de la gestión de tareas](./public/readme/mp1.png)  
-- **Estadísticas y Gráficos**: Visualiza tu progreso con gráficos intuitivos
-
-![Screenshot de la gestión de tareas](./public/readme/mp2.png)  
+**MyProgress** is the definitive application to manage your daily tasks, track your statistics and check your progress in an effective and visually attractive way. Ideal to keep you organized and motivated.
 
 ---
 
-## Instalación
+## Features
 
-1. **Clona el repositorio**:
-   ```sh
-   git clone https://github.com/AdrianPalacios03/XenoChangeWeb
-   ```
-2. **Instala las dependencias**:
-   ```sh
-   npm install
-   ```
-3. **Inicia la aplicación**:
-   ```sh
-   npm run dev
-   ```
+- **Daily Task Management**: Create, edit and organize your daily tasks.
 
-## Uso
-1. **Gestión de Tareas**
+![Task Management Screenshot](./public/readme/mp1.png)
+- **Statistics and Graphs**: View your progress with intuitive graphs
 
-2. **Estadísticas y Gráficos**
-
-3. **Historial de Progreso**
+![Task Management Screenshot](./public/readme/mp2.png)
 
 ---
 
-## Tecnologías
+## Usage
+
+1. **Clone the repository**:
+ ```sh
+ git clone https://github.com/AdrianPalacios03/XenoChangeWeb
+ ```
+2. **Install the dependencies**:
+ ```sh
+ npm install
+ ```
+3. **Start the application**:
+ ```sh
+ npm run dev
+ ```
+
+## Use
+1. **Task Management**
+
+2. **Statistics and Graphs**
+
+3. **Progress History**
+
+---
+
+## Technologies
 
 - **Frontend**:
-  - **React**: Biblioteca de JavaScript para construir interfaces de usuario.
-  - **TypeScript**: Superset de JavaScript que añade tipado estático.
-  - **Vite**: Herramienta de construcción de proyectos web.
-  - **Redux**: Librería para el manejo del estado de la aplicación.
-   - **Chart.js**: Librería para la creación de gráficos.
+ - **React**: JavaScript library to build user interfaces.
+ - **TypeScript**: JavaScript superset that adds static typing.
+ - **Vite**: Web project construction tool.
+ - **Redux**: Library for managing the state of the application.
+ - **Chart.js**: Library for creating charts.
 
 - **Backend**:
-   - **Firebase**: Plataforma de desarrollo de aplicaciones móviles y web.
+ - **Firebase**: Mobile and web application development platform.
 
-## Licencia
-Este proyecto está bajo la licencia **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International**. Para más información, visita el siguiente enlace: [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+## License
+This project is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License**. For more information, visit the following link: [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-## Contribución
+## Contribution
 
-¡Contribuciones son siempre bienvenidas! Por favor, sigue los siguientes pasos:
+Contributions are always welcome! Please follow the following steps:
 
-1. Haz un **fork** del proyecto.
-2. Crea una nueva **branch** (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza los cambios necesarios y **commitea** tus cambios (`git commit -am 'Añade nueva funcionalidad'`).
-4. **Sube** tus cambios (`git push origin feature/nueva-funcionalidad`).
-5. Abre un **pull request**.
+1. Make a **fork** of the project.
+2. Create a new **branch** (`git checkout -b feature/new-feature`).
+3. Make the necessary changes and **commit** your changes (`git commit -am 'Add new functionality'`).
+4. **Upload** your changes (`git push origin feature/new-functionality`).
+5. Open a **pull request**.
