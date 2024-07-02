@@ -8,10 +8,13 @@ export const Login = () => {
 
     const [passwordValue, setPasswordValue] = useState('');
     const dispatch = useAppDispatch();
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const password = localStorage.getItem('password')
-        if (password) onLogin(password)
+        if (password) 
+            onLogin(password);
+        setIsLoading(false);
     }, [])
 
     const onLogin = async (password?: string) => {
@@ -23,6 +26,14 @@ export const Login = () => {
             alert(`Wrong Password`)
         }
     }
+
+    if (isLoading) {
+        return (
+            <div><p>Loading...</p></div>
+        )
+    }
+
+
     return (
         <div className='login-page'>
             <div className="form-container">
