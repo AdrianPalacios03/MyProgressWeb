@@ -5,6 +5,7 @@ export const store = configureStore({
   reducer: {
     auth: authSlice.reducer
   },
+  devTools: false
 }) 
 
 export type RootState = ReturnType<typeof store.getState>

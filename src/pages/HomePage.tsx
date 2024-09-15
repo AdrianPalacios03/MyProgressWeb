@@ -3,12 +3,7 @@ import { ProgressChart } from '../components/ProgressChart';
 import { TimeChart } from '../components/TimeChart';
 import { Tasks } from '../components/Tasks';
 
-
 export const HomePage = () => {
-
-
-
-
   return (
     <div>
         <div className="title-date">

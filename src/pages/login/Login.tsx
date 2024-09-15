@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import './styles/login.css'
-import { getPasswordValue } from '../../database/getPasswordValue'
 import { useAppDispatch } from '../../hooks/reduxHooks'
 import { logIn } from '../../store/slices/auth/authSlice'
+import authUser from '../../database/authUser'
 
 export const Login = () => {
 
@@ -18,12 +18,17 @@ export const Login = () => {
     }, [])
 
     const onLogin = async (password?: string) => {
+        const email = "adrianpalaciosarvizu@gmail.com";
         const passwordString = password ? password : passwordValue;
-        if (passwordString === await getPasswordValue().then((data: any) => {return data?.password})) {
+        const user = await authUser(email, passwordString);
+
+
+        if (user) {
             dispatch(logIn(true));
-            localStorage.setItem('password', passwordString)
+            if (email && password) return;
+            localStorage.setItem('password', passwordValue);
         } else {
-            alert(`Wrong Password`)
+            alert('Wrong email or password');
         }
     }
 

@@ -6,10 +6,9 @@ import { getFirestore as getDB } from 'firebase/firestore'
 import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 
 // if (import.meta.env.DEV) {
-//   self.FIREBASE_APPCHECK_DEBUG_TOKEN = true
+//   // @ts-expect-error
+//   self.FIREBASE_APPCHECK_DEBUG_TOKEN = "xxx";
 // }
-// 6bf585ba-f777-45e9-8295-374dae9f2879
-// 140630
 
 const firebaseConfig = {
   apiKey: "AIzaSyDCxi6eYjlmbvuguBrC5ngsTs627wXjxFg",
@@ -26,7 +25,7 @@ export const FirebaseApp = initializeApp( firebaseConfig );
 
 export const FirebaseAuth = getAuth( FirebaseApp );
 export const FirebaseDB = getFirestore( FirebaseApp);
-
+export const firebaseAuth = getAuth(FirebaseApp);
 export const xenoDB = getDB(FirebaseApp);
 
 initializeAppCheck(FirebaseApp, {
